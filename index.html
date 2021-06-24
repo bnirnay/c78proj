@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<center>
+<body>
+
+    <h1 id = "display_names"> My Family Book</h1>
+
+    <img id = "display_image" src = "https://www.jing.fm/clipimg/detail/6-62060_happy-family-clipart-png-happy-family-cartoon.png" style = "width: 30%;" id = "family-image">
+<br><br>
+    <h4 id = "family-name"></h4>
+    <br><br>
+
+    <button onclick = "update()">Next</button>
+
+    <script>
+        
+        var images = [
+        "https://cdn.w600.comps.canstockphoto.com/funny-teen-boy-character-cartoon-clip-art-vector_csp63813660.jpg",
+        "https://freepikpsd.com/media/2019/10/mom-clipart-png-3.png",
+        "https://lh3.googleusercontent.com/proxy/I3RHNc4mwaPU34os1pKraTshd-EVT4G0JFbz6GxGDV4J2XhG9RSONwfQ2vfkJ6AAPYLjBzB7pNBK5lsxHxKmFkIAr-6rWFwhCfMR4IUVzQ",
+        "https://www.pngitem.com/pimgs/m/514-5146806_cute-little-girl-clipart-hd-png-download.png"];
+
+        var names = ["Nirnay B.","Nayana C.", "Gourab B.","Geetaksha B." ];
+
+        var i = 0;
+        function update(){
+            i++;
+
+            number_of_family_in_array = 3;
+
+            if (i > number_of_family_in_array){
+                i = 0;
+            }
+
+            
+
+            document.getElementById("display_names").innerHTML = names[i];
+            document.getElementById("display_image").src = images[i];
+
+        }
+    </script>
+</body>
+</center>
